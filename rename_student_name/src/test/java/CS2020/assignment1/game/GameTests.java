@@ -80,10 +80,6 @@ public class GameTests {
 	}
 	
 
-		/*    
-	    
-
-
 	@Test
 	public void t1_2() {
 		try {
@@ -121,6 +117,11 @@ public class GameTests {
 	    }	
 		
 	}
+	
+		/*    
+	    
+
+
 	
 	
 	@Test

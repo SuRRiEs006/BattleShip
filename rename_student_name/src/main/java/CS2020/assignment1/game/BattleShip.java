@@ -20,18 +20,9 @@ class BattleShip extends AbstractBattleShip {
 
     }
 
-    
+
 
   }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -44,34 +35,38 @@ class BattleShip extends AbstractBattleShip {
 	
 	public  String getName(){
 
-        return null;
+        return this.name;
 
     }
 
 	public  int getHits(){
 
-        return 0;
+        return this.hits;
 
     }
 	
 	public  String getShipOrientation(){
 
-        return null;
+        return this.shipOrientation;
 
     }
 	
-	public  void setHits(int numberOfHits){
+	public void setHits(int numberOfHits){
+
+        this.hits = numberOfHits;
 
 
     }
 	
-	public  int[][] getShipCoordinates(){
+	public int[][] getShipCoordinates(){
 
-        return null;
+        return this.shipCoordinates;
 
     }
 	
 	public  void setShipCoordinates(int [][] coordinates){
+
+        this.shipCoordinates = coordinates;
 
 
     }
