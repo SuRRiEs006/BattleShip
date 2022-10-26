@@ -117,38 +117,39 @@ public class GameTests {
 	    }	
 		
 	}
+		@Test
+	public void t1_3() {
+		String reason = null;
+		try {
+		BattleShip ship = new BattleShip ("Ship1"); 
+		 ship.shipCoordinates = new int [1][2];
+		 ship.shipCoordinates [0][0] = 1; 
+		 ship.shipCoordinates [0][1] = 2;
+			
 	
+			ship.hits = 2; 
+			reason = "1";
+			//ship is not at these coordinates
+			assertEquals (false, ship.checkAttack(2, 1));
+			reason = "2";
+			assertEquals (true, ship.checkAttack(1, 2));
+			reason = "3";
+			//hitting same coordinate again shoudl return false
+			assertEquals (false, ship.checkAttack(1, 2));
+	       
+	        
+	    } catch (Exception | Error e) {
+	        fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"T1.3 It seems that the checkAttack method is not working as expected. "+ ANSI_RESET+ e+" reason for fail is    "+ reason);
+	    }	
+		
+	}
 		/*    
 	    
 
 
 	
 	
-	@Test
-	public void t1_3() {
-		try {
-		BattleShip ship = new BattleShip ("Ship1"); 
-		 ship.shipCoordinates = new int [1][2];
-		 ship.shipCoordinates [0][0] = 1; 
-		 ship.shipCoordinates [0][1] = 2;
-	       
-	
-			ship.hits = 2; 
-			
-			//ship is not at these coordinates
-			assertEquals (false, ship.checkAttack(2, 1));
-			
-			assertEquals (true, ship.checkAttack(1, 2));
-			
-			//hitting same coordinate again shoudl return false
-			assertEquals (false, ship.checkAttack(1, 2));
-	       
-	        
-	    } catch (Exception | Error e) {
-	        fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"T1.3 It seems that the checkAttack method is not working as expected. "+ ANSI_RESET+ e);
-	    }	
-		
-	}
+
 	
 	@Test
 	public void t2_1() {

@@ -28,8 +28,15 @@ class BattleShip extends AbstractBattleShip {
 
       	
 	public  boolean checkAttack (int row,int column){
+        boolean hitOrMiss = false;
+        if (((row == this.shipCoordinates[0][0]) && (column == this.shipCoordinates[0][1])) && (this.hits < 3)){
+  
+            this.hits = this.hits + 1;
+            hitOrMiss = true;
 
-        return false;
+
+        }
+        return hitOrMiss;
 
     }
 	

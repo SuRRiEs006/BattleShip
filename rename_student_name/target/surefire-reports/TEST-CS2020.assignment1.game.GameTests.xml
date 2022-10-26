@@ -1,64 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CS2020.assignment1.game.GameTests" time="0.051" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CS2020.assignment1.game.GameTests" time="0.042" tests="4" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
-    <property name="java.specification.version" value="11"/>
-    <property name="sun.cpu.isalist" value=""/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/codio/workspace/rename_student_name/target/test-classes:/home/codio/workspace/rename_student_name/target/classes:/home/codio/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/codio/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
-    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\SuRRi\OneDrive\Desktop\BattleShip-main\rename_student_name\target\test-classes;C:\Users\SuRRi\OneDrive\Desktop\BattleShip-main\rename_student_name\target\classes;C:\Users\SuRRi\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\SuRRi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
-    <property name="user.timezone" value=""/>
-    <property name="java.vm.specification.version" value="11"/>
-    <property name="os.name" value="Linux"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="GB"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="US"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/zulu-11-amd64/lib"/>
-    <property name="sun.java.command" value="/home/codio/workspace/rename_student_name/target/surefire/surefirebooter8386622911785817493.jar /home/codio/workspace/rename_student_name/target/surefire 2022-10-26T21-04-05_671-jvmRun1 surefire14570296733031451119tmp surefire_015614266649329999916tmp"/>
-    <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/codio/workspace/rename_student_name/target/test-classes:/home/codio/workspace/rename_student_name/target/classes:/home/codio/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/codio/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\SuRRi\AppData\Local\Temp\surefire2187834128413478604\surefirebooter8267829342656689790.jar C:\Users\SuRRi\AppData\Local\Temp\surefire2187834128413478604 2022-10-26T17-25-28_946-jvmRun1 surefire4082660143356471436tmp surefire_07125739361523699042tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\SuRRi\OneDrive\Desktop\BattleShip-main\rename_student_name\target\test-classes;C:\Users\SuRRi\OneDrive\Desktop\BattleShip-main\rename_student_name\target\classes;C:\Users\SuRRi\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\SuRRi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/codio"/>
+    <property name="user.home" value="C:\Users\SuRRi"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2020-07-14"/>
-    <property name="java.home" value="/usr/lib/jvm/zulu-11-amd64"/>
-    <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/codio/workspace/rename_student_name"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_202\jre"/>
+    <property name="basedir" value="C:\Users\SuRRi\OneDrive\Desktop\BattleShip-main\rename_student_name"/>
+    <property name="file.separator" value="\"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="jdk.vendor.version" value="Zulu11.41+23-CA"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/codio/workspace/rename_student_name/target/surefire/surefirebooter8386622911785817493.jar"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\SuRRi\AppData\Local\Temp\surefire2187834128413478604\surefirebooter8267829342656689790.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
+    <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="11.0.8+10-LTS"/>
-    <property name="user.name" value="codio"/>
-    <property name="path.separator" value=":"/>
-    <property name="os.version" value="5.4.0-1035-aws"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Zulu11.41+23-CA"/>
-    <property name="localRepository" value="/home/codio/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="java.version" value="11.0.8"/>
-    <property name="user.dir" value="/home/codio/workspace/rename_student_name"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="user.name" value="SuRRi"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\SuRRi\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\SuRRi\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="user.dir" value="C:\Users\SuRRi\OneDrive\Desktop\BattleShip-main\rename_student_name"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="sun.os.patch.level" value="unknown"/>
-    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Docker\Docker\resources\bin;C:\Users\SuRRi\apache-maven-3.8.6\bin;C:\Users\SuRRi\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\SuRRi\AppData\Local\Programs\Python\Python37\;C:\Users\SuRRi\AppData\Local\Microsoft\WindowsApps;;C:\Users\SuRRi\AppData\Local\Programs\Microsoft VS Code\bin;."/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.vendor" value="Azul Systems, Inc."/>
-    <property name="java.vm.version" value="11.0.8+10-LTS"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="55.0"/>
+    <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="t1_1_a" classname="CS2020.assignment1.game.GameTests" time="0.004"/>
+  <testcase name="t1_1_a" classname="CS2020.assignment1.game.GameTests" time="0.007"/>
   <testcase name="t1_1_b" classname="CS2020.assignment1.game.GameTests" time="0"/>
   <testcase name="t1_2" classname="CS2020.assignment1.game.GameTests" time="0"/>
+  <testcase name="t1_3" classname="CS2020.assignment1.game.GameTests" time="0"/>
 </testsuite>
