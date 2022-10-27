@@ -11,6 +11,7 @@ class BattleShip extends AbstractBattleShip {
     
     // decides ship orientation
     Random rand = new Random();
+    
 
     if (rand.nextInt(2) == 0){
         this.shipOrientation = "horizontal";

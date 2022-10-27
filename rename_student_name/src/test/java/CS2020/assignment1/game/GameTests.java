@@ -143,28 +143,25 @@ public class GameTests {
 	    }	
 		
 	}
-		/*    
-	    
-
-
-	
-	
-
-	
-	@Test
+			@Test
 	public void t2_1() {
-	       
-			try {
+			String reason = null;
 		    AbstractGameGrid gameGrid = new GameGrid (10,10,4);
-		    
+
+			try {
+		    reason = "";
 		    boolean foundDifferentCharacter  =false;
 		   
 		    for (int i = 0; i< gameGrid.gameGrid.length;i++) {
 				
 				String subArray [] = gameGrid.gameGrid[i];
+				reason = "3";
 				for (int j = 0; j< subArray.length;j++) {
+					
+					reason = "4";
 					//allow ships as well in case later tasks were completed too 
 					if (!(subArray[j].equals(".")||subArray[j].equals("*"))) {
+						reason = "5";
 						foundDifferentCharacter =true; 
 						System.out.println(subArray[j]);
 					}
@@ -176,19 +173,25 @@ public class GameTests {
 			
 	        
 	    } catch (Exception | Error e) {
-	        fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"T2.1: Are you initialising the GameGrid with . ? Does it extend teh AbstractGameGrid?   "+ ANSI_RESET+ e);
+			fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"T2.1: Are you initialising the GameGrid with . ? Does it extend teh AbstractGameGrid?   "+ ANSI_RESET+ e+ reason);
 	    }	
 		
 	}
 	
+	
+	
+	
+	
 	@Test
 	public void t2_2() {
-	       
+		String reason = null;
+
 			try {
 		    AbstractGameGrid gameGrid = new GameGrid (10,10,4);
-		    
+		    reason = "2";
+
 			assertEquals (4,gameGrid.ships.length);
-			
+			reason = "3";
 			assertEquals ("Ship 1",gameGrid.ships[0].name);
 			
 			assertEquals ("Ship 2",gameGrid.ships[1].name);
@@ -199,10 +202,28 @@ public class GameTests {
 			
 	        
 	    } catch (Exception | Error e) {
-	        fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"T2.2: Are you generating the ships based on the parameter passed to the constructor of GameGrid? Do you generate the names of ships as specifiied?   "+ ANSI_RESET+ e);
+	        fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"T2.2: Are you generating the ships based on the parameter passed to the constructor of GameGrid? Do you generate the names of ships as specifiied?   "+ ANSI_RESET+ e+reason);
 	    }	
 		
 	}
+	
+	
+	
+	
+	
+	
+	
+	/*    
+	    
+
+
+	
+	
+
+	
+
+	
+
 	
 	@Test
 	public void t2_3() {
