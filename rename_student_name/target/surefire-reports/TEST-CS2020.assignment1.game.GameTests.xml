@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CS2020.assignment1.game.GameTests" time="0.045" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CS2020.assignment1.game.GameTests" time="0.076" tests="7" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.5.8-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\SuRRi\AppData\Local\Temp\surefire7141402430781648628\surefirebooter4033862842795214265.jar C:\Users\SuRRi\AppData\Local\Temp\surefire7141402430781648628 2022-10-27T14-58-36_492-jvmRun1 surefire17433201397307330185tmp surefire_07422597014572653834tmp"/>
+    <property name="sun.java.command" value="C:\Users\SuRRi\AppData\Local\Temp\surefire9888042694235429679\surefirebooter14198691022750307656.jar C:\Users\SuRRi\AppData\Local\Temp\surefire9888042694235429679 2022-10-27T15-34-59_218-jvmRun1 surefire10715879184356184105tmp surefire_018260845946463963554tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\SuRRi\OneDrive\Desktop\BattleShip-main\rename_student_name\target\test-classes;C:\Users\SuRRi\OneDrive\Desktop\BattleShip-main\rename_student_name\target\classes;C:\Users\SuRRi\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\SuRRi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\SuRRi\AppData\Local\Temp\surefire7141402430781648628\surefirebooter4033862842795214265.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\SuRRi\AppData\Local\Temp\surefire9888042694235429679\surefirebooter14198691022750307656.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.5+8"/>
@@ -63,4 +63,9 @@
   <testcase name="t1_3" classname="CS2020.assignment1.game.GameTests" time="0"/>
   <testcase name="t2_1" classname="CS2020.assignment1.game.GameTests" time="0"/>
   <testcase name="t2_2" classname="CS2020.assignment1.game.GameTests" time="0"/>
+  <testcase name="t2_3" classname="CS2020.assignment1.game.GameTests" time="0.03">
+    <failure message="&amp;#27;[47m&amp;#27;[30mT2.3: Something is wrong with your method of placing ships on the grid.   &amp;#27;[0mjava.lang.NullPointerException: Cannot load from object array because &quot;gameGrid3.ships[0].shipCoordinates&quot; is null" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: &amp#27;[47m&amp#27;[30mT2.3: Something is wrong with your method of placing ships on the grid.   &amp#27;[0mjava.lang.NullPointerException: Cannot load from object array because "gameGrid3.ships[0].shipCoordinates" is null
+	at CS2020.assignment1.game.GameTests.t2_3(GameTests.java:269)
+]]></failure>
+  </testcase>
 </testsuite>
