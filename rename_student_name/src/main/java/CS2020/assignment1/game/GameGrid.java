@@ -1,4 +1,6 @@
 package CS2020.assignment1.game;
+import java.util.Random;
+
 import CS2020.assignment1.game.AbstractGameGrid;
 
 
@@ -7,7 +9,7 @@ public class GameGrid extends AbstractGameGrid{
 
     public GameGrid(int width, int height, int numberOfShips){
 
-        this.gameGrid = new String[width][height];
+        this.gameGrid = new String[height][width];
         initializeGrid();
         generateShips(numberOfShips);
 
@@ -35,7 +37,33 @@ public class GameGrid extends AbstractGameGrid{
     }
 	
 	//this should place the ship on the grid using "*" symbol
-	public void placeShip (AbstractBattleShip ship){}
+	public void placeShip (AbstractBattleShip ship){
+        Random rand = new Random();
+        
+        String shipOrientation = ship.getShipOrientation();
+        if (shipOrientation == "horizontal"){
+            int[] randomShipXY = new int[2];
+            randomShipXY[0] = rand.nextInt(this.gameGrid.length-2);
+            randomShipXY[1] = rand.nextInt(this.gameGrid[0].length);
+            
+            for (int i = randomShipXY[0]; i < (randomShipXY[0] + 3); i++) {
+
+                this.gameGrid[i][randomShipXY[1]] = "*";
+    
+              }
+
+
+
+
+            }
+            
+        }
+
+
+
+
+    
+
 	
 	//this should generate ships for both player and the opponent 
 
