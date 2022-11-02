@@ -6,7 +6,7 @@ class OpponentGameGrid extends GameGrid{
 
     public OpponentGameGrid(int width, int height, int numberOfShips) {
         super(width, height, numberOfShips);
-        //TODO Auto-generated constructor stub
+        
     }
 
 

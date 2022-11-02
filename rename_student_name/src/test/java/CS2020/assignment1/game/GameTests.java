@@ -6,11 +6,14 @@ import org.junit.Test;
 
 import CS2020.assignment1.game.AbstractGameGrid;
 import CS2020.assignment1.game.BattleShip;
-/*
-
 import CS2020.assignment1.game.Game;
 import CS2020.assignment1.game.GameControls;
 import CS2020.assignment1.game.GameGrid;
+/*
+
+
+
+
 import CS2020.assignment1.game.OpponentGameGrid;
 import CS2020.assignment1.game.PlayerGameGrid;
 */
@@ -397,7 +400,79 @@ public class GameTests {
 	    }	
 		
 	}
-	
+
+
+	@Test
+	public void t3_1() {
+	       String reason="";
+			try {
+				//check if extends the interface
+			GameControls game = new Game (10,10,3); 
+			reason = "1";
+			//check if conversion works
+			OpponentGameGrid grid1 = (OpponentGameGrid) game.getOpponentssGrid(); 
+			reason = "2";
+			//check if conversion works
+			PlayerGameGrid grid2 = (PlayerGameGrid) game.getPlayersGrid(); 
+			reason = "3";
+			
+			 assertTrue (grid1.gameGrid.length==10);
+			 
+			 assertTrue (grid2.gameGrid.length==10);
+			 
+			 assertTrue (grid1.ships.length==3);
+			 
+			 assertTrue (grid2.ships.length==3);
+			
+	        
+	    } catch (Exception | Error e) {
+	        fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"T3.1: Something is wrong. Are you intantiating the grids? Do you extend the GameControls interface?    "+ ANSI_RESET+ e+reason);
+	    }	
+		
+	}
+
+
+
+	@Test
+	public void t3_3() {
+	       String results = "";
+			try {
+				//check if extends the interface
+			GameControls game = new Game (4,4,1); 
+			results = "1";
+			//check if conversion works
+			OpponentGameGrid grid1 = (OpponentGameGrid) game.getOpponentssGrid(); 
+			results = "2";
+			//check if conversion works
+			PlayerGameGrid grid2 = (PlayerGameGrid) game.getPlayersGrid(); 
+			results = "3";
+			grid1.ships[0].setHits(3);
+			results = "4";
+			game.checkVictory();
+			results = "5";
+			String output = outContent.toString().trim(); 
+			results = "6";
+	        assertTrue (output.contains("You have won!"));
+	        results = "7";
+	        outContent.reset();  
+	        results = "8";
+	        grid1.ships[0].setHits(0);
+	        
+	        grid2.ships[0].setHits(3);
+	        
+	    	game.checkVictory();
+	        output = outContent.toString().trim(); 
+		       
+	        assertTrue (output.contains("You have lost!"));
+	        
+	        outContent.reset(); 
+			
+	        
+	    } catch (Exception | Error e) {
+	        fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"T3.3: Something is wrong. Is your check victory method working? Check the code of this test for hints on the expected behaviour.    "+ ANSI_RESET+ e+results);
+	    }	
+			
+	}
 	/*    
 	    
 
@@ -414,74 +489,9 @@ public class GameTests {
 	
 	
 	
-	@Test
-	public void t3_1() {
-	       
-			try {
-				//check if extends the interface
-			GameControls game = new Game (10,10,3); 
-			
-			//check if conversion works
-			OpponentGameGrid grid1 = (OpponentGameGrid) game.getOpponentssGrid(); 
-			
-			//check if conversion works
-			PlayerGameGrid grid2 = (PlayerGameGrid) game.getPlayersGrid(); 
-			
-			 assertTrue (grid1.gameGrid.length==10);
-			 
-			 assertTrue (grid2.gameGrid.length==10);
-			 
-			 assertTrue (grid1.ships.length==3);
-			 
-			 assertTrue (grid2.ships.length==3);
-			
-	        
-	    } catch (Exception | Error e) {
-	        fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"T3.1: Something is wrong. Are you intantiating the grids? Do you extend the GameControls interface?    "+ ANSI_RESET+ e);
-	    }	
-		
-	}
+
 	
-	@Test
-	public void t3_3() {
-	       
-			try {
-				//check if extends the interface
-			GameControls game = new Game (4,4,1); 
-			
-			//check if conversion works
-			OpponentGameGrid grid1 = (OpponentGameGrid) game.getOpponentssGrid(); 
-			
-			//check if conversion works
-			PlayerGameGrid grid2 = (PlayerGameGrid) game.getPlayersGrid(); 
-			
-			grid1.ships[0].setHits(3);
-			
-			game.checkVictory();
-			
-			String output = outContent.toString().trim(); 
-	       
-	        assertTrue (output.contains("You have won!"));
-	        
-	        outContent.reset();  
-	        
-	        grid1.ships[0].setHits(0);
-	        
-	        grid2.ships[0].setHits(3);
-	        
-	    	game.checkVictory();
-	        output = outContent.toString().trim(); 
-		       
-	        assertTrue (output.contains("You have lost!"));
-	        
-	        outContent.reset(); 
-			
-	        
-	    } catch (Exception | Error e) {
-	        fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"T3.3: Something is wrong. Is your check victory method working? Check the code of this test for hints on the expected behaviour.    "+ ANSI_RESET+ e);
-	    }	
-			
-	}
+
 			
 			@Test
 			public void t3_4() {
