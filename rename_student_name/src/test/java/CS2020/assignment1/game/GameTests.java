@@ -209,7 +209,7 @@ public class GameTests {
 	
 	
 	
-	@Test
+		@Test
 	public void t2_3() {
 	       
 			try {
@@ -271,25 +271,10 @@ public class GameTests {
 		
 	}
 	
-	
-	
-	/*    
-	    
-
-
-	
-	
-
-	
-
-	
-
-	
-	
-	
 	@Test
 	public void t2_4() {
-	       
+		String reason = null;
+		
 			try {
 				//check if the class extends GameGrid hence type GameGrid
 			GameGrid pGameGrid = new PlayerGameGrid (4,4,1);
@@ -336,7 +321,7 @@ public class GameTests {
 	            if (output.charAt(i) == '*') {
 		               count4++; 
 		            }
-	        }
+	        }reason = " "+count2+" "+count3+" "+count4+" ";
 	        
 	        assertTrue (count==11);
 	        
@@ -408,10 +393,26 @@ public class GameTests {
 			
 	        
 	    } catch (Exception | Error e) {
-	        fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"T2.4: Something is wrong with your methods. Are you hiding opponnet's ships? Do you extend the GameGrid class?    "+ ANSI_RESET+ e);
+	        fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"T2.4: Something is wrong with your methods. Are you hiding opponnet's ships? Do you extend the GameGrid class?    "+ ANSI_RESET+ e+reason);
 	    }	
 		
 	}
+	
+	/*    
+	    
+
+
+	
+	
+
+	
+
+	
+
+	
+
+	
+	
 	
 	@Test
 	public void t3_1() {
