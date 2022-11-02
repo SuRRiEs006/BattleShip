@@ -3,7 +3,7 @@ package CS2020.assignment1.game;
 import java.util.Scanner;
 import CS2020.assignment1.game.GameControls;
 import CS2020.assignment1.game.GameGrid;
-import CS2020.assignment1.game.BattleShip;
+
 
 class Game implements GameControls {
 

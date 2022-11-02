@@ -23,7 +23,7 @@ class OpponentGameGrid extends GameGrid{
                 }
                     
 
-                System.out.print(nextOut);
+                System.out.print(" "+nextOut);
 
             }
 
