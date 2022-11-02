@@ -9,13 +9,14 @@ import CS2020.assignment1.game.BattleShip;
 import CS2020.assignment1.game.Game;
 import CS2020.assignment1.game.GameControls;
 import CS2020.assignment1.game.GameGrid;
+
+import CS2020.assignment1.game.OpponentGameGrid;
+import CS2020.assignment1.game.PlayerGameGrid;
 /*
 
 
 
 
-import CS2020.assignment1.game.OpponentGameGrid;
-import CS2020.assignment1.game.PlayerGameGrid;
 */
 import org.junit.Before;
 import org.junit.After;
@@ -473,40 +474,23 @@ public class GameTests {
 	    }	
 			
 	}
-	/*    
-	    
 
-
-	
-	
-
-	
-
-	
-
-	
-
-	
-	
-	
-
-	
-
-			
-			@Test
+		@Test
+		
 			public void t3_4() {
-			       
+			       String results = "";
 					try {
+						results = "1";
 						//check if extends the interface
 					Game game = new Game (4,4,1); 
-					
+					results = "2";
 					//find out where opponent's ship is
 					int coordinates [][] = ((OpponentGameGrid) game.getOpponentssGrid()).ships[0].shipCoordinates;
-					
+					results = "3";
 					game.playRound(coordinates[0][0] +","+coordinates[0][1]);
 					
 					String output = outContent.toString().trim(); 
-			       
+					results = "4";
 					//there should be at least one X 
 					
 					 int count = 0;
@@ -528,11 +512,11 @@ public class GameTests {
 					               count4++; 
 					            }
 				        }
-					
+						results = "5"+count2;
 			        assertTrue (count2>0);
-			        
+			        results = "6";
 			        assertTrue (output.contains("HIT Ship 1!!!"));
-			        
+			        results = "7";
 			       
 			        
 			        // we only have one ship and it can't have this shape so there has to be at least one miss
@@ -569,9 +553,30 @@ public class GameTests {
 					
 			        
 			    } catch (Exception | Error e) {
-			        fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"T3.4: Something is wrong with you rplayRound method. Check your code and also code of this test to see what is expected when your method is called.    "+ ANSI_RESET+ e);
+			        fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"T3.4: Something is wrong with you rplayRound method. Check your code and also code of this test to see what is expected when your method is called.    "+ ANSI_RESET+ e+results);
 			    }	
 		
 	}
+	/*    
+	    
+
+
+	
+	
+
+	
+
+	
+
+	
+
+	
+	
+	
+
+	
+
+			
+
 */
 }
