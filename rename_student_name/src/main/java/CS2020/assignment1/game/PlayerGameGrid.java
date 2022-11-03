@@ -15,7 +15,7 @@ class PlayerGameGrid extends GameGrid {
     public void printGrid() {
 
         // PRINTS WHO'S GRID IT IS
-        System.out.println("Player’s grid");
+        System.out.println("Player's grid");
 
         // CHECKS FOR ALL INDEXES IN 2D ARRAY HENCE THE NESTED FOR LOOP TO GET ALL THE
         // INDEXES CHECKED

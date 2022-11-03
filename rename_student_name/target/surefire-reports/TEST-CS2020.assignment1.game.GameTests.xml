@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CS2020.assignment1.game.GameTests" time="0.088" tests="11" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CS2020.assignment1.game.GameTests" time="0.08" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.5.8-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\SuRRi\AppData\Local\Temp\surefire11467322898606532347\surefirebooter13090702194351241618.jar C:\Users\SuRRi\AppData\Local\Temp\surefire11467322898606532347 2022-11-02T23-41-58_807-jvmRun1 surefire10325067048569658108tmp surefire_010049460665416420020tmp"/>
+    <property name="sun.java.command" value="C:\Users\SuRRi\AppData\Local\Temp\surefire11087742412456367073\surefirebooter6965476193832029612.jar C:\Users\SuRRi\AppData\Local\Temp\surefire11087742412456367073 2022-11-03T01-47-10_978-jvmRun1 surefire7623645649141392187tmp surefire_04286428531435217563tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\SuRRi\OneDrive\Desktop\BattleShip-c85c9a0f40bf95c261e04e281416a81b5a488180\rename_student_name\target\test-classes;C:\Users\SuRRi\OneDrive\Desktop\BattleShip-c85c9a0f40bf95c261e04e281416a81b5a488180\rename_student_name\target\classes;C:\Users\SuRRi\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\SuRRi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\SuRRi\AppData\Local\Temp\surefire11467322898606532347\surefirebooter13090702194351241618.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\SuRRi\AppData\Local\Temp\surefire11087742412456367073\surefirebooter6965476193832029612.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.5+8"/>
@@ -57,19 +57,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="t1_1_a" classname="CS2020.assignment1.game.GameTests" time="0.004"/>
+  <testcase name="t1_1_a" classname="CS2020.assignment1.game.GameTests" time="0.003"/>
   <testcase name="t1_1_b" classname="CS2020.assignment1.game.GameTests" time="0"/>
   <testcase name="t1_2" classname="CS2020.assignment1.game.GameTests" time="0"/>
-  <testcase name="t1_3" classname="CS2020.assignment1.game.GameTests" time="0.013">
-    <failure message="&amp;#27;[47m&amp;#27;[30mT1.3 It seems that the checkAttack method is not working as expected. &amp;#27;[0mjava.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1 reason for fail is    1" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: &amp#27;[47m&amp#27;[30mT1.3 It seems that the checkAttack method is not working as expected. &amp#27;[0mjava.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1 reason for fail is    1
-	at CS2020.assignment1.game.GameTests.t1_3(GameTests.java:146)
-]]></failure>
-  </testcase>
+  <testcase name="t1_3" classname="CS2020.assignment1.game.GameTests" time="0"/>
   <testcase name="t2_1" classname="CS2020.assignment1.game.GameTests" time="0"/>
   <testcase name="t2_2" classname="CS2020.assignment1.game.GameTests" time="0"/>
-  <testcase name="t2_3" classname="CS2020.assignment1.game.GameTests" time="0.024"/>
-  <testcase name="t2_4" classname="CS2020.assignment1.game.GameTests" time="0.001"/>
-  <testcase name="t3_1" classname="CS2020.assignment1.game.GameTests" time="0.002"/>
-  <testcase name="t3_3" classname="CS2020.assignment1.game.GameTests" time="0"/>
-  <testcase name="t3_4" classname="CS2020.assignment1.game.GameTests" time="0.003"/>
+  <testcase name="t2_3" classname="CS2020.assignment1.game.GameTests" time="0.029"/>
+  <testcase name="t2_4" classname="CS2020.assignment1.game.GameTests" time="0"/>
+  <testcase name="t3_1" classname="CS2020.assignment1.game.GameTests" time="0.001"/>
+  <testcase name="t3_3" classname="CS2020.assignment1.game.GameTests" time="0.001"/>
+  <testcase name="t3_4" classname="CS2020.assignment1.game.GameTests" time="0.001"/>
 </testsuite>
