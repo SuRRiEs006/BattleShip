@@ -1,8 +1,10 @@
+//IMPORTS ALL THE NESSASARY JAVA FILES
 package CS2020.assignment1.game;
 
 import CS2020.assignment1.game.AbstractBattleShip;
 import java.util.Random;
 
+//BattleShip CLASS EXTENDS AbstractBattleShip
 class BattleShip extends AbstractBattleShip {
 
     public BattleShip(String name) {
@@ -29,7 +31,7 @@ class BattleShip extends AbstractBattleShip {
         // GOING TO RETURN A true
         boolean hitOrMiss = false;
 
-        // FOR LOOP TO TRAVERSE ALL THE FIRST DIMENTION INDEXES
+        // FOR LOOP TO TRAVERSE ALL THE FIRST DIMENSION INDEXES
         for (int i = 0; i < this.shipCoordinates.length; i++) {
 
             // CHECKS IF x,y AND IF THEY ARE THE SAME AND HITS < 3

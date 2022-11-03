@@ -1,7 +1,9 @@
+//IMPORTS ALL THE NESSASARY JAVA FILES
 package CS2020.assignment1.game;
 
 import CS2020.assignment1.game.GameGrid;
 
+//OpponentGameGrid EXTENDS BattleShip class THAT EXTENDS AbstractBattleShip
 class OpponentGameGrid extends GameGrid {
 
     public OpponentGameGrid(int width, int height, int numberOfShips) {
