@@ -17,7 +17,7 @@ class OpponentGameGrid extends GameGrid{
             for (int j = 0; j < (this.gameGrid.length); j++) {
                 
                 String nextOut = this.gameGrid[i][j];
-                if (nextOut == "*"){
+                if (nextOut.equals("*")){
                     nextOut = ".";
 
                 }

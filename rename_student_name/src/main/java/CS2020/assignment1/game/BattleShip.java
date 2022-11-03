@@ -36,6 +36,15 @@ class BattleShip extends AbstractBattleShip {
             hitOrMiss = true;
 
 
+        }else if(((row == this.shipCoordinates[1][0]) && (column == this.shipCoordinates[1][1])) && (this.hits < 3)){
+            this.hits = this.hits + 1;
+            hitOrMiss = true;
+
+        }else if(((row == this.shipCoordinates[2][0]) && (column == this.shipCoordinates[2][1])) && (this.hits < 3)){
+            this.hits = this.hits + 1;
+            hitOrMiss = true;
+
+
         }
         return hitOrMiss;
 

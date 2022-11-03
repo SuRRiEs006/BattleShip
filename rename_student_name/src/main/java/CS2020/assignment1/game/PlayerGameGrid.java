@@ -17,7 +17,7 @@ class PlayerGameGrid extends GameGrid {
         for (int i = 0; i < (this.gameGrid.length); i++) {
             for (int j = 0; j < (this.gameGrid.length); j++) {
 
-                System.out.print("" + this.gameGrid[i][j]);
+                System.out.print(" " + this.gameGrid[i][j]);
 
             }
 

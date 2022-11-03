@@ -1,9 +1,10 @@
 package CS2020.assignment1.game;
 
 import java.util.Scanner;
+import java.util.Random;
 import CS2020.assignment1.game.GameControls;
 import CS2020.assignment1.game.GameGrid;
-
+import CS2020.assignment1.game.BattleShip;
 
 class Game implements GameControls {
 
@@ -36,21 +37,47 @@ class Game implements GameControls {
         for(int i=0; i<numOfShips;i++){
             validAttack = this.opponentGrid.ships[i].checkAttack(xCoordinate,yCoordinate);
             if (validAttack == true){
-                this.opponentGrid.gameGrid[yCoordinate][xCoordinate] = "X";
+                this.opponentGrid.gameGrid[xCoordinate][yCoordinate] = "X";
                 System.out.println("HIT "+(this.opponentGrid.ships[i].name)+"!!!");
 
 
-            }else{
+            }else if (this.opponentGrid.gameGrid[xCoordinate][yCoordinate] != "X" ){
                 this.opponentGrid.gameGrid[xCoordinate][yCoordinate] = "%";
                 System.out.println("MISS!!!");
 
             }            
 
-
-
-
         }
         this.opponentGrid.printGrid();
+
+
+
+
+
+    }
+
+    public void opponentAutoMove (){
+        Random rand = new Random();
+        Boolean validAttack = false;
+        int xCoordinate = rand.nextInt(this.playerGrid.gameGrid.length);
+        int yCoordinate = rand.nextInt(this.playerGrid.gameGrid[0].length);
+
+        ///////////////////////////
+        for(int i=0; i<numOfShips;i++){
+            validAttack = this.playerGrid.ships[i].checkAttack(xCoordinate,yCoordinate);
+            if (validAttack == true){
+                this.playerGrid.gameGrid[xCoordinate][yCoordinate] = "X";
+                System.out.println("HIT "+(this.playerGrid.ships[i].name)+"!!!");
+
+
+            }else if (this.playerGrid.gameGrid[xCoordinate][yCoordinate] != "X" ){
+                this.playerGrid.gameGrid[xCoordinate][yCoordinate] = "%";
+                System.out.println("MISS!!!");
+
+            }            
+
+        }
+        this.playerGrid.printGrid();
 
 
 
@@ -91,7 +118,7 @@ class Game implements GameControls {
 
     public void exitGame(String input) {
 
-        if (input == "exit") {
+        if (input.equals("exit")) {
             System.out.println("Exiting game – thank you for playing");
             System.exit(0);
         }

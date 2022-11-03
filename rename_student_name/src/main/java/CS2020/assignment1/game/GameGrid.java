@@ -44,7 +44,7 @@ public class GameGrid extends AbstractGameGrid{
 	public void placeShip (AbstractBattleShip ship){
         String shipOrientation = ship.shipOrientation;
         int[][] shipCoordinates = new int[3][2];
-        if (shipOrientation == "vertical") {
+        if (shipOrientation.equals("vertical")) {
             Random rand = new Random();
             int randVertical = rand.nextInt(this.gameGrid.length - 2);
             int randHorizontal = rand.nextInt(this.gameGrid.length);
@@ -55,6 +55,7 @@ public class GameGrid extends AbstractGameGrid{
 
                 shipCoordinates[indexValue][0] = i; // (x,y) format FIRST X
                 shipCoordinates[indexValue][1] = randHorizontal; // NOW Y
+                System.out.println(ship.name+": "+ship.shipOrientation+i+","+randHorizontal);
 
             }
 
@@ -70,7 +71,9 @@ public class GameGrid extends AbstractGameGrid{
 
                 shipCoordinates[indexValue][0] = randVertical; // (x,y) format FIRST X
                 shipCoordinates[indexValue][1] = i; // NOW Y
+                System.out.println(ship.name+": "+ship.shipOrientation+i+","+randHorizontal);
             }
+            
 
         }
 
