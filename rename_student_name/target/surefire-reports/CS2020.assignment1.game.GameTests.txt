@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: CS2020.assignment1.game.GameTests
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in CS2020.assignment1.game.GameTests
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.088 s <<< FAILURE! - in CS2020.assignment1.game.GameTests
+t1_3(CS2020.assignment1.game.GameTests)  Time elapsed: 0.013 s  <<< FAILURE!
+java.lang.AssertionError: [47m[30mT1.3 It seems that the checkAttack method is not working as expected. [0mjava.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1 reason for fail is    1
+	at CS2020.assignment1.game.GameTests.t1_3(GameTests.java:146)
+
